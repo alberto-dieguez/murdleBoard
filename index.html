@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tablero de Deducción — Estilo Murdle</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Tablero de <span>Deducción</span></h1>
+  <p>Sospechosos · Armas · Lugares — y lo que tú añadas</p>
+</header>
+
+<main>
+
+  <section class="panel">
+    <h2>Categorías</h2>
+    <div id="categoriesEditor"></div>
+    <button class="add-cat-btn" id="addCatBtn">+ Añadir categoría</button>
+  </section>
+
+  <section class="panel">
+    <h2>Tablero</h2>
+    <div class="toolbar">
+      <button id="clearBoard">Limpiar marcas</button>
+      <button id="clickHint">Clic: vacío → X → O</button>
+    </div>
+    <p class="board-scroll-hint">← desliza para ver todo el tablero →</p>
+    <div id="boardWrap"></div>
+    <div class="legend">
+      <span><b style="color:#8f2b26">X</b> = descartado</span>
+      <span><b style="color:#3c5a3a">O</b> = confirmado</span>
+    </div>
+  </section>
+
+  <section class="panel solver-panel">
+    <h2>Resolver Murdle</h2>
+    <div id="solverContent"></div>
+  </section>
+
+</main>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
